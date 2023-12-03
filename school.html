@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        html,
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            top: 0;
+        }
+
+        .box1 {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            margin-top: 3%;
+        }
+
+        .background {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            /* background-color: blue; */
+            width: 100%;
+
+        }
+
+
+        .brandname {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            text-align: left;
+            color: #ECECEC;
+            margin-right: -20%;
+
+        }
+
+        .navbar .navbar-links ul {
+            list-style-type: none;
+
+
+        }
+
+
+        .navbar .navbar-links li {
+            display: inline-block;
+            padding-left: 21px;
+
+        }
+
+        .navbar .navbar-links a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+
+        }
+
+        .login {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+            color: #ffffff;
+            margin-left: -7%;
+
+
+
+
+
+        }
+
+        .joinus {
+            padding: 15px 25px 15px 25px;
+            border-radius: 5px;
+            background: #FF6551;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            text-decoration: none;
+            color: #FFFFFF;
+            gap: 15px;
+            margin-left: -20%;
+
+
+        }
+
+        .boxrow {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            /* border: 1px solid yellow; */
+            width: 49%;
+            margin-top: 10%;
+            margin-left: 26%;
+        }
+
+        h5 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: #FFC652;
+        }
+
+        h1 {
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 80px;
+            letter-spacing: 0.2px;
+            color: black;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: blue; */
+            /* border: 1px solid red; */
+        }
+
+        .row>div {
+            background: #FFFFFF;
+            width: 25%;
+            /* text-align: center; */
+            padding-top: 20px;
+            /* border: 1px solid red; */
+            box-shadow: 0px 13px 19px 0px #00000012;
+            margin-right: 2%;
+            padding-left: 3%;
+            margin-top: 15%;
+        }
+
+        .row>div:hover {
+            background-color: #ff6551;
+        }
+        .row>div:hover * {
+            color: #ffffff;
+        }
+
+        .fixed-width {
+            display: inline-block;
+            /* border: 1px solid red; */
+            padding: 22px 19px 22px 19px;
+            border-radius: 10px;
+            gap: 10px;
+            background: #B6D7FF;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            text-align: left;
+            color: #252B42;
+        }
+
+        .line1 {
+            border: 2px solid #E74040;
+            width: 15%;
+            margin-top: 7%;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            color: #737373;
+
+        }
+
+
+        .layout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            background: #FFFFFF;
+            /* border: 1px solid red; */
+        }
+
+        .left {
+            position: relative;
+            /* border: 1px solid blue; */
+            width: 38%;
+            margin-top: 15%;
+            margin-left: 3%;
+
+        }
+
+        .image10 {
+            position: absolute;
+            /* border: 1px solid red; */
+            width: 8%;
+            /* height: 59px; */
+            margin-top: 168px;
+            margin-bottom: 237px;
+        }
+
+
+        .image5 {
+            position: absolute;
+            /* border: 1px solid red; */
+            /* width: 11%; */
+            /* height: 106px; */
+            margin-top: 62%;
+            margin-left: 13%;
+        }
+
+        .technology1 {
+            position: absolute;
+            /* border: 1px solid red; */
+            /* width: 376.94px; */
+            /* height: 440.61px; */
+            margin-left: 17%;
+            margin-bottom: 5%;
+        }
+
+        #outer-circle {
+            position: relative;
+            background-color: #CFE4E7;
+            border-radius: 9999px;
+            width: 351.1px;
+            height: 351.1px;
+            margin-top: 17%;
+            margin-left: 19%;
+            /* border: 1px solid green; */
+        }
+
+        #inner-circle {
+            position: absolute;
+            background-color: white;
+            border-radius: 9999px;
+            width: 250px;
+            height: 250px;
+            border: 56.09px solid white;
+            margin-top: 48px;
+            margin-left: 48px;
+
+        }
+
+        .col-mod-5 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            width: 30%;
+            gap: 35px;
+            margin-top: 21%;
+        }
+
+        .fixed-width1 {
+            border: 4px solid #E74040;
+            width: 18%;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            color: #252B42;
+
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            color: #FF6551;
+
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* width: 100%; */
+            /* border: 1px solid red; */
+            margin-top: 15%;
+        }
+
+        .box-right1 {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 35px;
+            margin-left: 2%;
+
+        }
+
+        .line2 {
+            border: 4px solid #E74040;
+            width: 18%;
+            margin-top: 32%;
+        }
+
+        .box4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 1px solid red; */
+            width: 73%;
+            gap: 10px;
+            margin-left: 12%;
+            margin-top: 20%;
+        }
+
+        .box5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            margin-top: 15%;
+            /* border: 1px solid red; */
+            margin-left: -2%;
+
+        }
+
+        .box5-left {
+            position: relative;
+            width: 17%;
+            /* border: 1px solid green; */
+
+            margin-left: 2%;
+        }
+
+        .box5-icon {
+            position: absolute;
+            align-items: center;
+            /* border: 1px solid rebeccapurple; */
+            background-color: #FFFFFF;
+            width: 17%;
+            padding: 4%;
+            border-radius: 44.79px;
+        }
+
+        .box5-sale {
+            position: absolute;
+            border: 1px solid#E74040;
+
+            width: 21%;
+            height: 8%;
+            top: 20px;
+            left: 20px;
+            padding: 0px 10px 0px 10px;
+            border-radius: 3px;
+            background: #E74040;
+            box-shadow: 0px 2px 4px 0px #0000001A;
+            margin-top: 7%;
+            margin-left: 8%;
+        }
+
+        .box6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 2%;
+            /* border: 1px solid red; */
+            margin-right: 2%;
+        }
+
+        .box6-1 {
+            display: flex;
+            flex-direction: column;
+            width: 18%;
+            /* border: 1px solid green; */
+            padding: 25px 25px 35px 25px;
+            gap: 10px;
+            margin-right: 2%;
+            padding-left: 3%;
+        }
+
+        .box6-2 {
+            display: flex;
+
+            /* border: 1px solid gold; */
+        }
+
+        .box6-3 {
+            /* border: 1px solid gold; */
+            position: relative;
+            width: 50px;
+            height: 26px;
+            border-radius: 20px;
+            background-color: #26335D;
+            margin-left: 3%;
+            padding-top: 3px;
+            padding-left: 2px;
+        }
+
+        .box6-4 {
+            display: flex;
+            width: 19px;
+            height: 16px;
+            /* border: 1px solid white; */
+            margin-top: -18px;
+            margin-left: 20px;
+        }
+
+        .box6-5 {
+            position: relative;
+            border: 1px solid #FF6551;
+            padding: 10px 20px 10px 20px;
+            border-radius: 37px;
+            width: 80%;
+            margin-top: 3%;
+            height: 44px;
+        }
+
+        text {
+            font-weight: 400;
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+            text-align: left;
+
+        }
+
+        .color1 {
+            color: #BDBDBD;
+        }
+
+        .color2 {
+            color: #2435A1;
+        }
+
+        .box7 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: #26335D;
+            /* border: 1px solid hotpink; */
+            gap: 10px;
+
+
+        }
+
+        .box7-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #26335D;
+            /* border: 1px solid hotpink; */
+
+
+        }
+
+        .box7-2 {
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            top: 29px;
+            left: 10.5px;
+            padding: 50px 40px 50px 40px;
+            gap: 20px;
+            background: #FFFFFF;
+            margin-right: 2%;
+            padding-left: 3%;
+            margin-top: 8%;
+            margin-bottom: 10%;
+        }
+
+        .border1 {
+            border: 1px solid#FF6551;
+            background-color: #FF6551;
+            width: 96px;
+            height: 96px;
+            padding: 24px 23px 24px 25px;
+            border-radius: 200px;
+
+        }
+
+        .box7-3 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            width: 30%;
+        }
+
+        .box7-4 {
+            display: flex;
+            align-items: center;
+            border: 1px solid#FF6551;
+            background-color: #FF6551;
+            width: 100%;
+            height: 52px;
+        }
+
+        .text-box7-3 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+        }
+
+        .box7-5 {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid blue; */
+            width: 100%;
+        }
+
+        .tik-border {
+            border: 1px solid #2DC071;
+            background-color: #2DC071;
+            width: 32px;
+            height: 32px;
+            padding: 10px 8px 11px 8px;
+            border-radius: 200px;
+
+        }
+
+        .box7-6 {
+            position: relative;
+            width: 89px;
+            height: 90px;
+            left: 279px;
+            margin-top: -30%;
+            border-radius: 52px;
+            gap: 10px;
+            background-color: #E77C40;
+        }
+
+        .box8 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            /* border: 1px solid red; */
+            gap: 10px;
+            padding-left: 7%;
+        }
+
+        .box8-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            /* border: 1px solid green; */
+            margin-top: 10%;
+        }
+
+        .box8-2 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            align-items: center;
+            width: 33%;
+            padding: 30px;
+            gap: 15px;
+            margin-left: 5%;
+        }
+
+        .box8-3 {
+            position: relative;
+            /* border: 1px solid red; */
+            width: 128px;
+            height: 128px;
+            border-radius: 200px;
+
+        }
+
+        .box8-4 {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid gold; */
+            width: 40%;
+        }
+
+        .box9 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+            width: 100%;
+            gap: 10px;
+            margin-top: 5%;
+        }
+
+        .box9-1 {
+            /* border: 1px solid red; */
+            width: 54%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            margin-left: 7%;
+        }
+
+        .box10 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* border: 1px solid red; */
+            width: 100%;
+            margin-top: 160px;
+        }
+
+        .box10-1 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid green; */
+            width: 10%;
+            gap: 20px;
+            margin-left: 5%;
+
+        }
+
+        .box10-2 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid green; */
+            width: 22%;
+            gap: 20px;
+            margin-left: 5%;
+
+        }
+
+        .linka {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            color: #737373;
+        }
+
+        .box11 {
+            display: flex;
+            flex-direction: row;
+
+            /* border: 1px solid red; */
+            background-color: #FAFAFA;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body> <img style="position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;height: 897px;
+        z-index: -999999;" src="New folder/hero-6-cover sec- (1).jpg">
+
+    <div class="box1">
+        <div class="background">
+
+
+            <div class="navbar">
+                <div class="brandname">Brandname</div>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">product</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+
+
+                <a class="login" href="#">login</a>
+                <a class="joinus" href="#">join us &nbsp; <img src="New folder/Vector (3).png">
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <div class="boxrow">
+            <h5 style="margin-left:-5%; margin-top: -1%;">join us</h5>
+            <h1 style="color: #FFFFFF;">HIGH QUALITY COURSES </h1>
+            <h4 style="color:#FFFFFF ;">Our goal is to make online education work for everyone</h4>
+            <a class="joinus" href="#" style="padding: 15px 40px; margin-left: -4%;">join us</a>
+        </div>
+
+    </div>
+    <div class="row">
+        <div>
+            <div class="fixed-width"><a href="#"><img src="New folder/012-blackboards.png"></a></div>
+            <h3 style="padding-top: 20px;">Lifetime access</h3>
+            <div class="line1"></div>
+            <p style="padding-top: 7%;padding-bottom:12%;width: 68%;">The gradual accumulation of
+                information about atomic and
+                small-scale behaviour...</p>
+        </div>
+        <div>
+            <div class="fixed-width"><a href="#>"><img src="New folder/009-backpack-1.png"> </a>
+            </div>
+            <h3 style="padding-top: 20px;">training Courses</h3>
+            <div class="line1"></div>
+            <div class="text1">
+                <p style="padding-top: 7%;padding-bottom:12%;width: 68%;">The gradual accumulation of
+                    information about atomic and
+                    small-scale behaviour...
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="fixed-width"><a href="#"><img src="New folder/Vector (2).png" ;width="26.92px"
+                        ; height="32px" ;>
+                </a></div>
+            <h3 style="padding-top: 20px;">Expert instruction</h3>
+            <div class="line1"></div>
+            <div class="text1">
+                <p style="padding-top: 7%;padding-bottom:12%;width: 68%;">The gradual accumulation of
+                    information about atomic and
+                    small-scale behaviour...</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="layout">
+        <div class="left">
+            <div id="outer-circle">
+                <div id="inner-circle"></div>
+
+            </div>
+            <div class="technology1"><img src="New folder/technology 1.png"></div>
+            <div class="image5"><img src="New folder/image 5.png"></div>
+            <img src="New folder/image 2.png" style="margin-left: 74%;margin-top: 42%;
+                margin-bottom: 29%;position: absolute;">
+            <div class="image10"><img src="New folder/image 10.png"></div>
+        </div>
+        <div class="col-mod-5">
+            <div class="fixed-width1"></div>
+            <h2>Watch our Courses</h2>
+            <p style="width: 80%;">Problems trying to resolve the conflict between
+                the two major realms of Classical physics:
+                Newtonian mechanics </p>
+            <a href="#" style="text-decoration: none;">
+                <h6>Learn More &nbsp;<img src="New folder/icon arrow-next.png"></h6>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="box3">
+        <div class="box-right1">
+            <div class="line2"></div>
+            <h2>Every Client Matters</h2>
+            <p style="width: 80%;">Problems trying to resolve the conflict between
+                the two major realms of Classical physics:
+                Newtonian mechanics </p>
+            <a href="#" style="text-decoration: none;">
+                <h6>Learn More &nbsp;<img src="New folder/icon arrow-next.png"></h6>
+            </a>
+        </div>
+        <video width="36%" style="border-radius: 20px;width: 36%;height: 300px;margin-top:90px;margin-left: -8%;"
+            controls>
+            <source src="2cc876cff49305a61c11194a72c067e423580082-144p.mp4" type="video/mp4">
+            <source src="2cc876cff49305a61c11194a72c067e423580082-144p.mp4" type="video/ogg">
+        </video>
+    </div>
+    <div class="box4">
+        <h6>Courses</h6>
+        <h2>Get Quality Education</h2>
+        <p><br> trying to resolve the conflict between <br>
+            the two major realms of Classical physics: Newtonian mechanics </p>
+    </div>
+    <div class="box5">
+        <div class="box5-left"><img src="New folder/product-cover-133 sec-.png">
+            <div class="box5-icon" style="margin-top:236px;margin-left:49px;"><a href="#"><img style="margin-top: 2px;"
+                        src="New folder/Vector (4).png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:99px"><a href="#"><img
+                        src="New folder/icn favorite.png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:149px"><a href="#"><img style="margin-top: 1px;"
+                        src="New folder/icn favorite1.png"></a></div>
+            <div class="box5-sale">
+                <h6 style="color: #FFFFFF;">Sale</h6>
+            </div>
+        </div>
+
+
+
+        <div class="box5-left"><img src="New folder/product-cover-131.png">
+            <div class="box5-icon" style="margin-top:236px;margin-left:49px;"><a href="#"><img
+                        src="New folder/Vector (4).png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:99px"><a href="#"><img
+                        src="New folder/icn favorite.png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:149px"><a href="#"><img
+                        src="New folder/icn favorite1.png"></a></div>
+            <div class="box5-sale">
+                <h6 style="color: #FFFFFF;">Sale</h6>
+            </div>
+        </div>
+        <div class="box5-left"><img src="New folder/product-cover-130 sec-.png">
+            <div class="box5-icon" style="margin-top:236px;margin-left:49px;"><a href="#"><img
+                        src="New folder/Vector (4).png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:99px"><a href="#"><img
+                        src="New folder/icn favorite.png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:149px"><a href="#"><img
+                        src="New folder/icn favorite1.png"></a></div>
+            <div class="box5-sale">
+                <h6 style="color: #FFFFFF;">Sale</h6>
+            </div>
+        </div>
+        <div class="box5-left"><img src="New folder/product-cover-132 sec-.png">
+            <div class="box5-icon" style="margin-top:236px;margin-left:49px;"><a href="#"><img
+                        src="New folder/Vector (4).png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:99px"><a href="#"><img
+                        src="New folder/icn favorite.png"></a></div>
+            <div class="box5-icon" style="margin-top:236px;margin-left:149px"><a href="#"><img
+                        src="New folder/icn favorite1.png"></a></div>
+            <div class="box5-sale">
+                <h6 style="color: #FFFFFF;">Sale</h6>
+            </div>
+        </div>
+    </div>
+    <div class="box6">
+        <div class="box6-1">
+            <div class="box6-2"><a href="#"
+                    style="text-decoration: none;font-size: 14px;font-weight: 700;color:#FF6551 ;margin-right: 9%;">Books
+                    Liberary</a>
+                <div class="box6-3"><img src="New folder/icon emojione-star.png"
+                        alt="image" width="16" height="16">
+                    <div class="box6-4">
+                        <text>4.9</text>
+                    </div>
+                </div>
+            </div>
+            <h5 style="color:#252B42 ;">Our Experts Teacher</h5>
+            <p>We focus on ergonomics
+                and meeting you....</p>
+            <div class="box6-2"><img style="padding-right: 7%;"
+                    src="New folder/Frame sec-.png">
+                <h6 style="color:#737373 ;">15 Sales</h6>
+            </div>
+            <h5>
+                <span class="color1">$6.48</span>
+                <span class="color2">&nbsp;$6.48</span>
+            </h5>
+            <div class="box6-5">
+                <a href="#" style="text-decoration: none;">
+                    <h6 style="margin-top: -2%;" >
+                        Learn More&nbsp;
+                        <img style="display: flex;margin-left: 88%;margin-top:-18%;" src="New folder/icon arrow-next.png">
+                    </h6>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="box6-1">
+            <div class="box6-2"><a href="#"
+                    style="text-decoration: none;font-size: 14px;font-weight: 700;color:#FF6551 ;margin-right: 9%;">Books
+                    Liberary</a>
+                <div class="box6-3"><img src="New folder/icon emojione-star.png"
+                        alt="image" width="16" height="16">
+                    <div class="box6-4">
+                        <text>4.9</text>
+                    </div>
+                </div>
+            </div>
+            <h5 style="color:#252B42 ;">Our Experts Teacher</h5>
+            <p>We focus on ergonomics
+                and meeting you....</p>
+            <div class="box6-2"><img style="padding-right: 7%;"
+                    src="New folder/Frame sec-.png">
+                <h6 style="color:#737373 ;">15 Sales</h6>
+            </div>
+            <h5>
+                <span class="color1">$6.48</span>
+                <span class="color2">&nbsp;$6.48</span>
+            </h5>
+            <div class="box6-5">
+
+                <a href="#" style="text-decoration: none;">
+                    <h6 style="margin-top: -2%;">
+                        Learn More&nbsp;
+                        <img style="display: flex;margin-left: 88%;margin-top:-18%;"
+                            src="New folder/icon arrow-next.png">
+                    </h6>
+                </a>
+            </div>
+
+        </div>
+        <div class="box6-1">
+            <div class="box6-2"><a href="#"
+                    style="text-decoration: none;font-size: 14px;font-weight: 700;color:#FF6551 ;margin-right: 9%;">Books
+                    Liberary</a>
+                <div class="box6-3"><img src="New folder/icon emojione-star.png"
+                        alt="image" width="16" height="16">
+                    <div class="box6-4">
+                        <text>4.9</text>
+                    </div>
+                </div>
+            </div>
+            <h5 style="color:#252B42 ;">Our Experts Teacher</h5>
+            <p>We focus on ergonomics
+                and meeting you....</p>
+            <div class="box6-2"><img style="padding-right: 7%;"
+                    src="New folder/Frame sec-.png">
+                <h6 style="color:#737373 ;">15 Sales</h6>
+            </div>
+            <h5>
+                <span class="color1">$6.48</span>
+                <span class="color2">&nbsp;$6.48</span>
+            </h5>
+            <div class="box6-5">
+                <a href="#" style="text-decoration: none;">
+                    <h6 style="margin-top: -2%;">
+                        Learn
+                        More&nbsp;
+                        <img style="display: flex;margin-left: 88%;margin-top:-18%;"
+                            src="New folder\icon arrow-next.png">
+                    </h6>
+                </a>
+            </div>
+
+        </div>
+        <div class="box6-1">
+            <div class="box6-2"><a href="#"
+                    style="text-decoration: none;font-size: 14px;font-weight: 700;color:#FF6551 ;margin-right: 9%;">Books
+                    Liberary</a>
+                <div class="box6-3"><img src="New folder\icon emojione-star.png"
+                        alt="image" width="16" height="16">
+                    <div class="box6-4">
+                        <text>4.9</text>
+                    </div>
+                </div>
+            </div>
+            <h5 style="color:#252B42 ;">Our Experts Teacher</h5>
+            <p>We focus on ergonomics
+                and meeting you....</p>
+            <div class="box6-2"><img style="padding-right: 7%;"
+                    src="New folder\Frame sec-.png">
+                <h6 style="color:#737373 ;">15 Sales</h6>
+            </div>
+            <h5>
+                <span class="color1">$6.48</span>
+                <span class="color2">&nbsp;$6.48</span>
+            </h5>
+            <div class="box6-5">
+                <a href="#" style="text-decoration: none;">
+                    <h6 style="margin-top: -2%;">
+                        Learn More&nbsp;
+                        <img style="display: flex;margin-left: 88%;margin-top:-18%;"
+                            src="New folder\icon arrow-next.png">
+                    </h6>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="box7" style="margin-top: 10%;">
+        <h6 style="padding-left: 12%;margin-top:10% ;">Practice Advice</h6>
+        <h2 style="padding-left: 12%;margin-top: 10px;color: #FFFFFF;">Most Popular Courses</h2>
+        <p style="color:#FFFFFF ; padding-left: 12%;margin-top: 10px;margin-bottom: 50px;"><br>Problems trying to
+            resolve the conflict between </br>
+            the two major realms of Classical physics: Newtonian mechanics </p>
+    </div>
+    <div class="box7-1">
+        <div class="box7-2">
+            <div class="border1" style="margin-top: 11%;"><img
+                    src="New folder\coolicon.png"
+                    style="padding-top: 15%;padding-left: 3%;"></div>
+            <h3>FREE</h3>
+            <h6 style="color: #737373;">Organize across all apps by<br>
+                hand</br></h6>
+            <div class="box7-3">
+                <h2 style="color:#FF6551 ;">19$</h2>
+                <h6 style="color:#8EC2F2 ;">Per Month</h6>
+
+            </div>
+            <p>Slate helps you see how<br>
+                many more days you need...</br></p>
+            <div class="box7-4">
+                <div class="text-box7-3" style="margin-left:37% ;">Try for free</div>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="background-color:#BDBDBD ;padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">1GB Cloud storage
+                </h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="background-color:#BDBDBD ;padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Email and community
+                    support
+
+                </h6>
+
+            </div>
+
+
+        </div>
+        <div class="box7-2">
+            <div class="box7-6" style="margin-left: -8%;">
+                <h3 style="color:#FFFFFF ;margin-left: 18%;margin-top: 30%;">New</h3>
+            </div>
+            <div class="border1"><img src="New folder\coolicon.png"
+                    style="padding-top: 15%;padding-left: 3%;"></div>
+            <h3>FREE</h3>
+            <h6 style="color: #737373;">Organize across all apps by<br>
+                hand</br></h6>
+            <div class="box7-3">
+                <h2 style="color:#FF6551 ;">19$</h2>
+                <h6 style="color:#8EC2F2 ;">Per Month</h6>
+
+            </div>
+            <p>Slate helps you see how<br>
+                many more days you need...</br></p>
+            <div class="box7-4">
+                <div class="text-box7-3" style="margin-left:37% ;">Try for free</div>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="background-color:#BDBDBD ;padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">1GB Cloud storage
+                </h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="background-color:#BDBDBD ;padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Email and community
+                    support
+
+                </h6>
+
+            </div>
+
+
+
+        </div>
+        <div class="box7-2">
+            <div class="border1" style="margin-top: 11%;"><img
+                    src="New folder\coolicon.png"
+                    style="padding-top: 15%;padding-left: 3%;"></div>
+            <h3>FREE</h3>
+            <h6 style="color: #737373;">Organize across all apps by<br>
+                hand</br></h6>
+            <div class="box7-3">
+                <h2 style="color:#FF6551 ;">19$</h2>
+                <h6 style="color:#8EC2F2 ;">Per Month</h6>
+
+            </div>
+            <p>Slate helps you see how<br>
+                many more days you need...</br></p>
+            <div class="box7-4">
+                <div class="text-box7-3" style="margin-left:37% ;">Try for free</div>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="padding-top: 5px;"><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Unlimited product updates</h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="background-color:#BDBDBD ;padding-top: 5px; "><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">1GB Cloud storage
+                </h6>
+
+            </div>
+            <div class="box7-5">
+                <div class="tik-border" style="background-color:#BDBDBD ;padding-top: 5px; "><img
+                        src="New folder\check .icn-xs.png"></div>
+                <h6 style="color:#252B42 ;margin-left:5% ;">Email and community
+                    support
+
+                </h6>
+
+            </div>
+        </div>
+    </div>
+    <div class="box8">
+        <h6 style="padding-left: 4%;margin-top: 160px;">Testimonials</h6>
+        <h2 style="padding-left: 4%;">Our Popular Courses</h2>
+        <p style="padding-left: 4%;">Problems trying to resolve the conflict between<br>
+            the two major realms of Classical physics: Newtonian mechanics</br>
+        </p>
+
+    </div>
+    <div class="box8-1">
+        <div class="box8-2">
+            <div class="box8-3"><img style="position: absolute;z-index: -9999;border-radius:200px ;"
+                    src="New folder\testimonial-user-cover-1.png"></div>
+            <p>Slate helps you see how many more days<br>
+                you need to work to reach your financial</br>
+                goal for the month and year.</p>
+            <div class="box8-4"><img style="margin-right: 10%;"
+                    src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\Vector.png">
+            </div>
+            <h5 style="color:#252B42;">Regina Miles</h5>
+            <h6 style="color:#737373 ;">Designer</h6>
+        </div>
+        <div class="box8-2">
+            <div class="box8-3"><img style="position: absolute;z-index: -9999;border-radius:200px ;"
+                    src="New folder\testimonial-user-cover-2.png"></div>
+            <p>Slate helps you see how many more days<br>
+                you need to work to reach your financial</br>
+                goal for the month and year.</p>
+            <div class="box8-4"><img style="margin-right: 10%;"
+                    srcNew folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\icon emojione-star.png">
+                <img style="margin-right: 10%;" src="New folder\Vector.png">
+            </div>
+            <h5 style="color:#252B42;">Regina Miles</h5>
+            <h6 style="color:#737373 ;margin-bottom: 190px;">Designer</h6>
+        </div>
+    </div>
+    <div class="box9">
+
+        <h6>Newsletter</h6>
+        <h2>Our Popular Courses</h2>
+        <p>Problems trying to resolve the conflict between</p>
+        <p>the two major realms of Classical physics: Newtonian mechanics </p>
+        <div class="box9-1">
+            <form>
+                <input type="email" value="Your Email" style="border: 1px solid #e6e6e6;width: 73%;
+                          padding: 15px;color: #e6e6e6;border-radius: 5px 0px 0px 5px;background-color: #f9f9f9;">
+                <input type="Submit" value="Subscribe" style="background-color: #ff6551;color: #e6e6e6;width: 25%;border: 1px;border-radius: 0px 5px 5px 0px;
+                          padding: 15px;">
+
+            </form>
+        </div>
+              
+    </div>
+    <div class="box10">
+        <div class="box10-1">
+            <h5 style="color:#252B42 ;">Company Info</h5>
+            <div class="linka"><a href="#" style="text-decoration: none;">About Us</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Carrier</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">We are hiring</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Blog</a></div>
+        </div>
+        <div class="box10-1">
+            <h5 style="color:#252B42 ;">Legal</h5>
+            <div class="linka"><a href="#" style="text-decoration: none;">About Us</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Carrier</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">We are hiring</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Blog</a></div>
+        </div>
+        <div class="box10-1">
+            <h5 style="color:#252B42 ;">Features</h5>
+            <div class="linka"><a href="#" style="text-decoration: none;">Business Marketing</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">User Analytic</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;"></a>Live Chat</div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Unlimited Support</a></div>
+        </div>
+        <div class="box10-1">
+            <h5 style="color:#252B42 ;">Resources</h5>
+            <div class="linka"><a href="#" style="text-decoration: none;">IOS & Android</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Watch a Demo</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">Customers</a></div>
+            <div class="linka"><a href="#" style="text-decoration: none;">API</a></div>
+        </div>
+        <div class="box10-2">
+            <h5 style="color: #252B42;">Get In Touch</h5>
+            <div class="box6-2"><img src="New folder\Vector (5).png"> &nbsp; <h6
+                    style="color:#737373 ;">(480) 555-0103</h6>
+            </div>
+            <div class="box6-2"><img src="New folder\Vector (6).png" width="25"
+                    height="25"> &nbsp; <h6 style="color:#737373 ;">4517 Washington Ave. Manchester,
+                    Kentucky 39495</h6>
+            </div>
+            <div class="box6-2"><img src="New folder\Vector (7).png"> &nbsp; <h6
+                    style="color:#737373 ;">debra.holt@example.com</h6>
+            </div>
+        </div>
+    </div>
+    <div class="box11">
+        <div class="box6-2" style="margin-top: 52px;margin-left: 11%;">
+            <h6 style=" color: #737373;">Made With Love By Figmaland All Right Reserved </h6>
+        </div>
+        <div class="box6-2" style="margin-top: 52px; margin-left: 47%; gap: 20px;">
+            <a href="#"><img src="New folder\facebook sec-.png"></a>
+            <a href="#"><img src="New folder\instagram sec-.png"></a>
+            <a href="#"><img src="New folder\twitter sec-.png"></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
